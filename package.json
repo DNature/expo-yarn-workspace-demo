@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "name": "expo-yarn-workspace-demo",
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "nohoist": [
+    "**/react-native",
+    "**/react-native/**",
+    "**/expo",
+    "**/expo/**",
+    "**/@babel/core",
+    "**/@babel/core/**"
+  ]
+}
