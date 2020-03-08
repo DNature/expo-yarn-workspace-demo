@@ -1,8 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import { add } from "@expoYarn/common";
+import "./App.css";
 
 const App = () => {
+  // Testing out our add function
+  const result = add(10, 20);
+  console.log(result); // => Returns [30]
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +26,6 @@ const App = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;
